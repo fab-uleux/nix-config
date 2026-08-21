@@ -1,0 +1,29 @@
+ { config, pkgs, ... }:
+
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./modules/common.nix
+  ];
+
+  # Hostname
+  networking.hostName = "terra";
+
+  # Bootloader
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/nvme0n1";
+  boot.loader.grub.useOSProber = true;
+
+  # Required for Btrfs subvolumes
+  boot.loader.grub.fsIdentifier = "provided";
+
+  # KDE Plasma / Wayland
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+}
+
