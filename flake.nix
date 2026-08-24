@@ -48,7 +48,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
 
-              users.fabulous = import ./home/laptop.nix;
+              users.fabulous = import ./home.nix;
 
               backupFileExtension = "backup";
 

@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
-    ./modules/common.nix
+    ./hardware-config.nix
+    ./modules/common-config.nix
   ];
 
   # Hostname

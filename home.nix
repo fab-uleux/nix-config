@@ -6,5 +6,6 @@
   imports = [
     ./home/common.nix
     ./home/desktop.nix
+    ./home/laptop.nix
   ];
 }
