@@ -6,7 +6,23 @@
   ];
 
   home.packages = with pkgs; [
-    impala
-  ];  
-}
+    # Window manager / X11
+    i3
+    dmenu
+    dunst
 
+    # Laptop specific
+    brightnessctl
+    playerctl
+    pamixer
+    xclip
+    xrandr
+
+    # Network
+    impala
+    bluetui
+
+    # Media
+    mpv
+  ];
+}

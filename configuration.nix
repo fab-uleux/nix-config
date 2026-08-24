@@ -24,6 +24,22 @@
   # Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+  
+  # Hardware
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+  
+  # Local AI / Ollama
+  services.ollama = {
+    enable = true;
+    package = pkgs.ollama-rocm;
+
+    loadModels = [
+      "devstral-small-2"
+    ];
+  };
 
 }
 

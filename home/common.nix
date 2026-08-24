@@ -7,6 +7,7 @@
     # CLI utilis
     alacritty
     git
+    lazygit
     btop
     curl
     wget
@@ -32,6 +33,11 @@
     # Browsers
     vivaldi
     tor-browser
+    
+    # Misc
+    obsidian
+    localsend
+    signal
   ];
 
   # System information display
@@ -45,7 +51,6 @@
     labelColor = "red";
 
     info = [
-      "host"
       "kernel"
       "uptime"
       "packages"
