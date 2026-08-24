@@ -41,7 +41,7 @@
         system = "x86_64-linux";
 
         modules = [
-          ./laptop-configuration.nix
+          ./config/laptop-config.nix
 
           home-manager.nixosModules.home-manager {
             home-manager = {
