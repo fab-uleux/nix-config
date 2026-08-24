@@ -18,7 +18,7 @@
         system = "x86_64-linux";
 
         modules = [
-          ./terra-config.nix
+          ./config/terra-config.nix
 
           home-manager.nixosModules.home-manager {
             home-manager = {
