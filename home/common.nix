@@ -37,7 +37,7 @@
     # Misc
     obsidian
     localsend
-    signal
+    signal-desktop
   ];
 
   # System information display
